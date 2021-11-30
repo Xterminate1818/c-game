@@ -1,4 +1,5 @@
 #pragma once
+#include <stdio.h>
 #include "../include/SDL.h"
 
 // Constants
@@ -11,11 +12,19 @@ struct {
     SDL_Surface* screen;
 } App; 
 
+struct vec2 {
+    float x; float y;
+}
 
-void aWipe();
+float magnitude(vec2 v);
+float imagnitude(vec2 v);
+vec2 normalized(vec2 v);
 
-int aBlitSurface(SDL_Surface* src, const SDL_Rect* srcrect, SDL_Rect* dstrect);
+void gWipe();
 
-void aUpdate();
+int gBlitSurface(SDL_Surface* src, const SDL_Rect* srcrect, SDL_Rect* dstrect);
 
+void gUpdate();
+
+SDL_Surface* gLoad(char* path);
 

@@ -4,10 +4,8 @@
 SDL_Event gEvent;
 
 // Flags
-int QUIT;
-int PAUSE;
-
-// Graphics
+int g_quit;
+int g_pause;
 
 // Game functions
 
