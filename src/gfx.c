@@ -4,6 +4,7 @@ const int WIN_WIDTH = 500;
 const int WIN_HEIGHT = 500;
 const int WIN_FLAGS = SDL_WINDOW_SHOWN;
 
+
 float magnitude(vec2 v) {
     float ret = v.x + v.y;
     ret *= ret;

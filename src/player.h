@@ -1,3 +1,10 @@
 #pragma once
+#include "gfx.h"
 
-const char[] pImgPath;
+SDL_Rect pRect;
+
+void pInit();
+void pEvent(SDL_Event* e);
+void pLogic();
+void pDraw();
+

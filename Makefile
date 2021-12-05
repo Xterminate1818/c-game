@@ -22,6 +22,6 @@ all: $(TARGET)
 
 $(TARGET): $(SRC)
 
-	$(CC) $(CCFLAGS) -o $@ $(SRC) -Iinclude -Llib -lSDL2 
+	$(CC) $(CCFLAGS) -o $@ $(SRC) -Iinclude -Llib -lSDL2 -lm
 clean:
 	rm $(TARGET)

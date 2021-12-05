@@ -1,4 +1,5 @@
 #pragma once
+#include <math.h>
 #include <stdio.h>
 #include "../include/SDL.h"
 
@@ -12,9 +13,9 @@ struct {
     SDL_Surface* screen;
 } App; 
 
-struct vec2 {
+typedef struct {
     float x; float y;
-}
+} vec2;
 
 float magnitude(vec2 v);
 float imagnitude(vec2 v);
